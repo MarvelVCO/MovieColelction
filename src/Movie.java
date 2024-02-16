@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Movie {
     private final String title;
     private final String[] cast;
@@ -19,7 +21,7 @@ public class Movie {
         System.out.println("Title: " + title + "\n" +
                            "Runtime: " + runtime + "\n" +
                            "Directed by: " + director + "\n" +
-                           "Cast: " + cast + "\n" +
+                           "Cast: " + Arrays.toString(cast) + "\n" +
                            "Overview: " + overview + "\n" +
                            "User Rating: " + userRating);
     }
@@ -30,21 +32,5 @@ public class Movie {
 
     public String[] getCast() {
         return cast;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public String getOverview() {
-        return overview;
-    }
-
-    public String getRuntime() {
-        return runtime;
-    }
-
-    public String getUserRating() {
-        return userRating;
     }
 }
